@@ -1,0 +1,130 @@
+#menu
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 9999;
+    width: 100%
+    
+    .one
+        ul
+            list-style: none;
+            +flexbox
+            +justify-content(center)
+
+            li
+                margin: 0 20px 20px
+
+                a
+                    color: #fff;
+                    +font-size(24px)
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-shadow: 3px 3px 2px #e6007e;
+                    -o-text-shadow: 3px 3px 2px #e6007e;
+                    -ms-text-shadow: 3px 3px 2px #e6007e;
+                    -moz-text-shadow: 3px 3px 2px #e6007e;
+                    -webkit-text-shadow: 3px 3px 2px #e6007e
+                    +font-size(24px)
+
+                    &:hover
+                        color: #ffed00    
+
+            .logo
+                transition: .4s ease;
+                -o-transition: .4s ease;
+                -ms-transition: .4s ease;
+                -moz-transition: .4s ease;
+                -webkit-transition: .4s ease;
+                width: 502px;
+                height: 231px;
+                background: url(../../assets/img/logotipo/logotipo.png) no-repeat center center;
+                background-size: 100%;
+                text-indent: -9999em;
+                margin-top: -90px
+            
+    .two    
+        display: none
+        
+        ul
+            width: 100%
+            list-style: none;
+            
+                
+            .logo
+                transition: .4s ease;
+                -o-transition: .4s ease;
+                -ms-transition: .4s ease;
+                -moz-transition: .4s ease;
+                -webkit-transition: .4s ease;
+                width: 502px;
+                height: 231px;
+                background: url(../../assets/img/logotipo/logotipo.png) no-repeat center center;
+                background-size: 100%;
+                text-indent: -9999em;
+                margin-top: -90px
+        
+        ul
+            list-style: none;
+            +flexbox
+            +justify-content(center)
+            +flex-wrap(wrap)    
+
+            li
+                margin: 0 20px 20px
+
+                a
+                    color: #fff;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-shadow: 3px 3px 2px #e6007e;
+                    -o-text-shadow: 3px 3px 2px #e6007e;
+                    -ms-text-shadow: 3px 3px 2px #e6007e;
+                    -moz-text-shadow: 3px 3px 2px #e6007e;
+                    -webkit-text-shadow: 3px 3px 2px #e6007e
+                    +font-size(24px)
+
+                    &:hover
+                        color: #ffed00    
+
+            
+        
++breakpoint($menu)
+    #menu
+        .one
+            display: none
+            ul
+                li
+                    a
+                        +font-size(18px)
+                .logo 
+        
+        .two
+            list-style: none;
+            +flexbox
+            +justify-content(center)
+            +flex-wrap(wrap)
+        
++breakpoint($tablet)
+    #menu
+        display: none
+        .one
+            ul
+                li
+                    a
+                        +font-size(20px)
+                .logo 
+        
+        .two  
+            
+            
++breakpoint($celular2)
+    #menu
+        
+        .one
+            ul
+                li
+                    a
+                        
+                .logo 
+        
+        .two      

@@ -1,0 +1,341 @@
+#header
+    transition: 1s ease-in-out
+    -o-transition: 1s ease-in-out
+    -ms-transition: 1s ease-in-out
+    -moz-transition: 1s ease-in-out
+    -webkit-transition: 1s ease-in-out
+    position: relative
+    width: 100%
+    height: 100%
+    margin-bottom: 50px
+    //background-size: cover
+    //background-repeat: no-repeat
+    //background-position: center center
+    //background-color: #e7057b
+    //background-attachment: fixed
+    //background-image: url(assets/img/banners/hero-3.jpg)
+    .teste    
+        height: 100%
+        width: 100%
+        .logoT
+            display: none
+
+        //.control-prev,            
+        //.control-next
+            position: absolute;
+            top: 0;
+            width: 130px;
+            height: 220px;
+            margin-top: 250px;
+            font-size: 140px;
+            cursor: pointer;
+            z-index: 99;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 60px
+            z-index: 2
+
+
+        //.control-prev
+            left: 0
+            background-image: url(../../assets/img/icones/arrow-light-round-left-white.png)
+            background-size: 20%;
+
+        //.control-next
+            right: 0;
+            background-image: url(../../assets/img/icones/arrow-light-round-right-white.png)
+            background-size: 20%;
+
+
+        .info-bar
+            width: 100%;
+            height: 60px;
+            //line-height: 60px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff   
+            +flexbox
+            +justify-content(space-between)
+            
+
+
+            .lang
+                +flexbox
+                +align-items(center)
+                //height: 100%    
+                ul
+                    +flexbox
+                    margin-bottom: 0
+
+                    li
+
+
+                a     
+                    +flexbox
+                    width: 25px;
+                    height: 30px;
+                    margin: 0 5px;
+                    text-indent: -9999em;
+                    background-position: center center;
+                    background-size: 100%;
+                    background-repeat: no-repeat
+
+                .de-DE 
+                    background-image: url(../../assets/img/icones/de.png)
+
+                .es-ES
+                    background-image: url(../../assets/img/icones/es.png)
+
+                .pt-BR
+                    background-image: url(../../assets/img/icones/br.png)
+
+                .en-US  
+                    background-image: url(../../assets/img/icones/us.png)
+
+
+            .sociais
+                +flexbox
+                +align-items(center)
+                ul
+                    +flexbox
+                    margin-bottom: 0
+                    li
+                        a
+                            margin: 0 10px
+                            +font-size(26px)
+                            color: #fff
+                            
+                            .fa-facebook-official
+                                &:hover
+                                    color: $facebook
+                            .fa-instagram
+                                &:hover
+                                    color: $instagram
+                            .fa-youtube-play
+                                &:hover
+                                    color: $googleplus
+
+        
+        .hero
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            
+            .lSSlideOuter
+                width: 100%;
+                height: 100%;
+                
+                .lSSlideWrapper
+                    height: 100%
+                    ul
+                        width: 100%;
+                        height: 100%!important;
+                        
+                        li
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover
+                            background-repeat: no-repeat
+                            background-position: center center
+                            background-attachment: fixed
+                            
+                            img
+                                +flexbox
+                                width: 100%
+                                height: 100%
+                                object-fit: cover 
+                                object-position: center center
+                                
+                            
+                        .he1
+                            background-image: url(../../assets/img/banners/hero-1.jpg)                            
+                        .he2    
+                            background-image: url(../../assets/img/banners/hero-2.jpg)
+                        .he3
+                            background-image: url(../../assets/img/banners/hero-3.jpg)
+                        .he4 
+                            background-image: url(../../assets/img/banners/hero-4.jpg)
+            .lSAction
+                display: none!important
+                //z-index: 99999999999999
+            
+                
+        
+        .newsletter
+            position: absolute;
+            left: 0
+            bottom: 0
+            width: 100%
+            height: 58px
+            text-align: center
+            color: #fff
+            +font-size(24px)
+            
+
+
+            .cform    
+                +flexbox
+                +justify-content(center)
+                +flex-wrap(wrap)
+                +align-items(center)    
+                background-color: rgba(0, 0, 0, 0.5); 
+                padding: 10px 0
+
+                span
+                    margin-right: 20px
+                    +font-size(20px)
+
+                input,
+                button
+                    background: transparent
+
+                input
+                    border: 1px solid #fff;
+                    width: 200px;
+                    outline: none
+                    margin: 0 5px
+                    +font-size(16px)
+                    padding: 7px 0
+                    
+
+                    &::placeholder
+                        color: rgba(255, 255, 255, 0.8)
+                        +font-size(16px)
+                        padding: 0 10px 0
+                        position: relative
+                        bottom: 0px
+                    
+                    &::-moz-placeholder
+                        color: rgba(255, 255, 255, 0.8)
+                        +font-size(16px)
+                        padding: 0 10px 0
+                        position: relative
+                        bottom: 2px
+ 
+                    &:hover
+                        border: 1px solid rgba(255, 255, 0, 0.5);
+                        background-color: rgba(0, 0, 0, 0.5);
+                        outline: 2px solid #fff;
+                    
+                    &:focus
+                        border: 1px solid rgba(255, 255, 0, 0.5);
+                        background-color: rgba(0, 0, 0, 0.5);
+                        outline: 2px solid #fff;
+
+                button
+                    border: none;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    +font-size(24px)
+
+                    &:hover
+                        background: rgba(255, 255, 0, 0.5);
+                        //outline: 3px solid rgba(255, 255, 0, 0.5);
+
+                    &:focus
+                        background: rgba(255, 255, 0, 0.5);
+                        //outline: 3px solid #e6007e
+                
+                
++breakpoint($newsletter)
+    #header
+        .teste
+            .info-bar
+
+
+            .newsletter  
+                height: 85px            
+
+                .cform
+                    form
+
+
+                        input
+                        
+                        
+                
++breakpoint($tablet)
+    #header
+        .teste
+            .logoT
+                +flexbox
+                +justify-content(center)
+                height: 100%             
+
+                ul    
+
+                    .logo
+                        transition: .4s ease;
+                        -o-transition: .4s ease;
+                        -ms-transition: .4s ease;
+                        -moz-transition: .4s ease;
+                        -webkit-transition: .4s ease;
+                        width: 300px;
+                        height: 100px;
+                        background: url(../../assets/img/logotipo/logotipo.png) no-repeat center center;
+                        background-size: 100%;
+                        text-indent: -9999em;
+                        margin-top: 20px
+                        position: relative
+                        z-index: 4
+       
+
+            .info-bar
+                display: none  
+
+            .newsletter   
+                height: 174px
+
+                .cform
+                    form
+                        +flexbox
+                        +justify-content(center)
+                        +flex-direction(column)
+
+                        input
+                            width: 500px
+                            margin: 0 0 10px
+
+                            &::placeholder                    
+                                +font-size(13px)
+                                font-weight: 300                   
+
+                        button   
+                            +font-size(20px)    
+                
++breakpoint($celular2)
+    #header  
+        .teste
+            .logoT
+
+                ul    
+
+                    .logo                                    
+                        margin-top: 15px
+   
+
+            .newsletter   
+                height: 174px
+
+                .cform
+                    form
+
+                        input
+                            width: 300px
+                            margin: 0 0 10px
+                    
++breakpoint($newsletter2) 
+    #header    
+        .teste
+            .newsletter   
+                height: 202px
+
+                .cform
+                    form
+
+                        input                    
+            
+                  
+        
+         
