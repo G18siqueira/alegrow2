@@ -1,0 +1,306 @@
+#contact-us
+    max-width: 1170px;
+    margin: 60px auto 60px auto
+    +flexbox
+    +justify-content(center)
+    +flex-wrap(wrap)    
+    
+    .titleSec
+        +font-size(60px)
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center
+        margin-bottom: 20px
+        width: 100%
+        color: #646363;
+        
+    .pSec          
+        +font-size(36px)
+        color: #646363;
+        line-height: 1.2
+        width: 100%
+        text-align: center
+        margin: 0 10px 30px
+        
+        
+
+        
+    .formulario
+        width: 50%
+        
+        .subtitleF
+            margin: 35px 0 20px
+            font-weight: 700
+            text-transform: uppercase;
+            color: #646363;
+            
+            
+
+        form    
+            +font-size(24px)
+
+            input,            
+            textarea  
+                width: 95%
+                height: 35px
+                margin: 0 0 15px
+                border: none
+                background-color: #f2f2f2
+                +font-size(16px)
+                
+                &:hover
+                    border: 1px solid #e6007e
+                    outline: 1px solid #e6007e
+                
+                &:focus
+                    border: 2px solid #e6007e
+                    outline: 2px solid #e6007e
+
+            textarea    
+                padding: 10px 10px !important
+                min-height: 207px;
+                width: 95%;
+                line-height: 1.25
+        
+            button
+                float: right;
+                border: none;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-left: 0;
+                margin-right: 5%;
+                background: #fff;
+                color: #e6007e
+
+                &:hover
+                    background: rgba(255, 255, 0, 0.5);
+                    //outline: 3px solid rgba(204, 50, 153, 0.9);
+
+                &:focus
+                    color: rgba(204, 50, 153, 0.9);
+                    background: rgba(255, 255, 0, 0.5);
+                    outline: 3px solid rgba(204, 50, 153, 0.9);
+    .continfo  
+        width: 50%
+        .title
+        .info
+            .subtitleF
+                margin: 15px 0 15px
+                font-weight: 700
+                text-transform: uppercase;
+                color: #646363;
+            
+            .nmail
+                .whats
+                    +font-size(24px)            
+                    
+                    a
+                        color: #646363
+                        .fa-whatsapp
+                            +font-size(30px)
+                            color: #88bd27
+                            margin-right: 10px
+                            font-weight: bold
+                    
+                    
+                .color
+                    +font-size(24px) 
+                    background: -webkit-linear-gradient(left,#e6007e , #ffed00);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                
+                a
+                    .underline
+                        text-decoration: underline
+                        
+                    
+                
+            .endereco    
+                margin: 50px 0
+                p
+                    +font-size(24px)                    
+                    background: -webkit-linear-gradient(left,#e6007e, #ffed00 40%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+            
+            
+//celular
+//celular2
+//tablet
+//desktop1
+//desktop2    
+                
++breakpoint($desktop2)  
+    #contact-us
+        .titleSec
+            +font-size(48px)
+    
+        .pSec
+            +font-size(24px)
+        
+        .formulario
+            .subtitleF
+                +font-size(24px)
+        
+            form  
+                input,            
+                textarea 
+                    padding: 0 10px
+                    
+                
+                    &::placeholder
+                        +font-size(16px)
+                        
+
+                textarea
+                button
+        .continfo      
+            .title
+            .info
+                .subtitleF
+                    +font-size(24px)
+                .nmail
+                    p
+                .endereco 
+                    p
+                        
++breakpoint($desktop1)  
+    #contact-us
+        .titleSec
+        .pSec
+        .formulario
+            .subtitleF
+        
+            form  
+                input,            
+                textarea 
+
+                textarea
+                button
+        .continfo      
+            .title
+            .info
+                .subtitleF
+                .nmail
+                    p
+                .endereco 
+                    p
+                        
++breakpoint($tablet)  
+    #contact-us
+        .titleSec
+            +font-size(36px)
+            font-weigth: 700
+        .pSec  
+            +font-size(18px)
+            font-weigth: 300  
+            
+        .formulario
+            width: 90%  
+            
+            .subtitleF
+                +font-size(18px)
+        
+            form
+                +flexbox
+                +justify-content(center)
+                +flex-wrap(wrap)    
+                input,            
+                textarea 
+                    width: 100% 
+                    
+                    &::placeholder                    
+                        +font-size(13px)
+                        font-weight: 300    
+                    
+                textarea
+                button
+                    width: 100% 
+                    margin-right: 0    
+                    +font-size(20px)
+        .continfo   
+            width: 90%
+            text-align: left
+            
+            .title
+            .info
+                .subtitleF
+                    +font-size(18px)
+                .nmail
+                    .whats
+                        +font-size(18px)
+                        font-weight: 300  
+                    
+                        a   
+                            +font-size(18px)
+                            font-weight: 300
+                        
+                    .color  
+                        +font-size(18px)
+                        font-weight: 300  
+                    
+                .endereco 
+                    p
+                        +font-size(18px)    
++breakpoint($celular2)  
+    #contact-us
+        .titleSec
+        .pSec
+        .formulario
+            
+            .subtitleF
+                +font-size(20px)
+            form  
+                input,            
+                textarea 
+                    width: 100% 
+                    
+                textarea
+                button
+                    width: 100%  
+        .continfo 
+            width: 90% 
+        
+            .title
+            .info
+                .subtitleF
+                    +font-size(18px)    
+                .nmail
+                    .whats            
+                        +font-size(16px)
+                        a
+                            color: #646363
+                            .fa-whatsapp
+                                +font-size(20px)
+                                color: #88bd27
+                                margin-left: 0px 
+                    .color  
+                        +font-size(16px)
+                    
+                    p
+                .endereco 
+                    p
+                        +font-size(16px)
+                        
++breakpoint($celular)  
+    #contact-us
+        .titleSec
+        .pSec
+        .formulario
+            .subtitleF
+        
+            form  
+                input,            
+                textarea 
+
+                textarea
+                button
+        .continfo      
+            .title
+            .info
+                .subtitleF
+                .nmail
+                    p
+                .endereco 
+                    p
+                        

@@ -1,0 +1,105 @@
+#about-us
+    width: 100%;
+    min-height: 600px;
+    background: url(../../assets/img/banners/quemsomos.jpg) no-repeat center center;
+    margin-bottom: 60px;
+    background-size: cover;
+    background-attachment: fixed
+    color: #fff
+    +flexbox
+    +justify-content(flex-end)
+    +flex-wrap(wrap) 
+    +align-items(center)
+    
+    .ctexto
+        width: 50%
+        +flexbox
+        +justify-content(flex-start)
+        +flex-wrap(wrap) 
+        +align-items(center)
+        margin: 0 80px 
+        text-align: justify
+
+        h2
+            margin: 60px 0 20px;
+            +font-size(48px)
+            font-weight: 700;
+            text-transform: uppercase 
+
+        p
+            +font-size(30px)
+            line-height: 1.2  
+            margin-bottom: 60px
+            
+    
+//celular
+//celular2
+//tablet
+//desktop1
+//desktop2    
+                
++breakpoint($desktop2)  
+    #about-us   
+    
+        .ctexto
+
+            h2
+
+            p
+                +font-size(24px)
+            
+            
++breakpoint($desktop1)  
+    #about-us   
+    
+        .ctexto
+
+            h2
+
+            p
+            
++breakpoint($tablet)  
+    #about-us   
+        +justify-content(center)
+        background-image: none
+        background: linear-gradient(to bottom right, #e6007e  , #5bbdd9 )
+        
+        .ctexto
+            +justify-content(center)
+            text-align: justify 
+            width: 80%
+            margin: 0 
+            
+
+                
+            h2
+                +font-size(36px)
+                margin: 0px 0 20px;
+
+            p
+                +font-size(18px) 
+                font-weight: 300
+                text-align: left
+                margin-bottom: 0
+            
+            
++breakpoint($celular2)  
+    #about-us 
+        //background-image: none
+        //background: linear-gradient(to bottom right, #e6007e  , #5bbdd9 )
+    
+        .ctexto
+            text-align: left
+
+            h2
+
+            p
+            
++breakpoint($celular)  
+    #about-us   
+    
+        .ctexto
+
+            h2
+
+            p    

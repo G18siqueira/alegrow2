@@ -1,0 +1,344 @@
+#footer
+    +flexbox
+    +justify-content(space-around)
+    +flex-wrap(wrap)    
+    font-size: 30px;
+    text-align: left;
+    width: 90%
+    margin: 30px auto;
+    background: #fff;
+    padding: 0 15px
+    
+    ul
+        list-style: none;
+        padding: 0 0 30px 0;
+        margin: 15px 0
+        
+        li
+            color: #646363;
+            font-size: 24px 
+            
+            &:first-child
+                //font-size: 30px;
+                text-transform: uppercase;
+                font-weight: 700
+            
+            a
+                color: #646363    
+    
+    .fBoxL
+        width: 23%
+    
+        .about  
+            .titleSec
+                +font-size(24px)
+                text-transform: uppercase
+                font-weight: 700
+                color: #646363 
+            
+            .pSec    
+                +font-size(18px)
+                text-transform: uppercase
+                font-weight: 700
+                color: #646363 
+            
+            li
+                
+                p
+                    +font-size(20px)
+            .bottom
+                padding: 0 0 15px
+                
+    .fBox
+        width: 22%
+        
+        
+        .links
+            li
+                a
+                    +font-size(24px)
+                    text-transform: uppercase
+                    font-weight: 700
+                    color: #646363
+ 
+                    
+                    &:hover
+                       color: #d1da0f
+                    
+        .social
+                
+            .titleSec
+                +font-size(24px)
+                text-transform: uppercase
+                font-weight: 700
+                color: #646363    
+
+            li 
+                margin: 0 0 15px 0
+
+                a
+                    color: #979696 
+                    +font-size(20px)
+
+                    &:hover
+                        color: #e6007e
+            i   
+                margin-right: 10px;
+                display: block;
+                float: left;
+                width: 30px;
+                height: 30px;
+                background-position: center center;
+                background-size: 100%;
+                background-repeat: no-repeat
+
+            .facebook
+                background-image: url(../../assets/img/icones/facebook.png)
+
+            .instagram
+                background-image: url(../../assets/img/icones/instagram.png)
+
+            .youtube
+                background-image: url(../../assets/img/icones/youtube.png)
+                
+        
+                
+                   
+                
+        .contact 
+            position: relative
+            left: 30px
+            
+            .titleSec
+                +font-size(24px)
+                text-transform: uppercase
+                font-weight: 700
+                color: #646363 
+            li
+                +font-size(20px)     
+                p
+                      
+    
+    .lang
+        display: none
+//celular
+//celular2
+//tablet
+//desktop1
+//desktop2    
+                
++breakpoint($desktop2)
+    #footer
+        ul
+            li
+                a
+        .fBox   
+            .links
+                li
+                    a
+            .social 
+                li 
+                    a
+                i
+                .facebook
+                .instagram
+                .youtube 
+            
+            .about  
+                li            
+                small
+                    
+            .contact  
+                li
+               
+                    p        
+                        
++breakpoint($desktop1)
+    #footer
+        ul
+            li
+                a
+        .fBox   
+            .links
+                li
+                    a
+            .social 
+                li 
+                    a
+                i
+                .facebook
+                .instagram
+                .youtube 
+            
+            .about  
+                li            
+                small
+                    
+            .contact  
+                li
+               
+                    p        
+                        
++breakpoint($tablet)
+    #footer
+        
+        ul
+            li
+                a
+         
+        
+            
+        .fBox, .fBoxL  
+            width: 90%
+            
+            .links
+                +flexbox
+                +justify-content(center)  
+                +flex-direction(row)    
+                li
+                    margin: 0 10px
+                    a
+                        +font-size(20px)
+                        font-weight: 700
+            .social
+                display: table
+                margin: 0 auto
+                text-align: center
+                .titleSec 
+                    +font-size(20px)  
+                    font-weight: 700
+                    text-transform: uppercase
+                    
+                li
+                    
+                    a
+                        +font-size(18px)  
+                        
+                i     
+                .facebook   
+                    background-size: 80%
+                .instagram
+                    background-size: 80%
+                .youtube 
+                    background-size: 80%
+            
+            .about  
+                +flexbox
+                +justify-content(center)  
+                +flex-direction(column)
+                text-align: center    
+                .titleSec 
+                    +font-size(20px) 
+                    font-weight: 700
+                    text-transform: uppercase
+                
+                .pSec
+                    +font-size(18px)
+                    font-weight: 700
+                li
+                    p
+                        +font-size(18px)
+                    
+            .contact 
+                +flexbox
+                +justify-content(center)  
+                +flex-direction(column)
+                text-align: center
+                left: 0
+                
+                .titleSec 
+                    +font-size(20px) 
+                    font-weight: 700
+                    text-transform: uppercase
+                
+                li
+                    +font-size(18px)
+                    p 
+                        
+        .lang
+            +flexbox
+            +align-items(center)  
+            ul
+                +flexbox
+                margin-bottom: 0
+
+                li
+            a     
+                +flexbox
+                width: 25px;
+                height: 30px;
+                margin: 0 5px;
+                text-indent: -9999em;
+                background-position: center center;
+                background-size: 100%;
+                background-repeat: no-repeat
+
+            .de-DE 
+                background-image: url(../../assets/img/icones/de.png)
+
+            .es-ES
+                background-image: url(../../assets/img/icones/es.png)
+
+            .pt-BR
+                background-image: url(../../assets/img/icones/br.png)
+
+            .en-US  
+                background-image: url(../../assets/img/icones/us.png)
+                        
+                        
+                        
++breakpoint($celular2)
+    #footer
+        ul
+            li
+                a
+        .fBox   
+            .links
+                +flex-direction(column)
+                text-align: center   
+                
+                text    
+                li
+                    a
+            .social 
+                li 
+                    a
+                i
+                .facebook
+                .instagram
+                .youtube 
+            
+            .about  
+                li            
+                small
+                    
+            .contact  
+                li
+               
+                    p        
+                        
++breakpoint($celular)
+    #footer
+        ul
+            li
+                a
+        .fBox   
+            .links
+                li
+                    a
+            .social 
+                li 
+                    a
+                i
+                .facebook
+                .instagram
+                .youtube 
+            
+            .about  
+                li            
+                small
+                    
+            .contact  
+                li
+               
+                    p        
